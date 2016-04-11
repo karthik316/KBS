@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="WebApplication8.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        body{
+            margin:auto;
+        }
+        #Menu1{
+            margin-left:7%;
+            margin-right:10%;
+        }
+        #Label1{
+            padding-top:15px;
+            padding-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <table style="width:100%;">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#1A1A1A" ForeColor="White" Orientation="Horizontal" style="font-weight: 700" Width="85%">
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.html"></asp:MenuItem>
+                                <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/contact.html"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact Us" Value="Contact Us" NavigateUrl="~/contact.html"></asp:MenuItem>
+                                <asp:MenuItem Text="Create Vacancy Request" Value="Create Vacancy Request" NavigateUrl="~/CreateVacancyReq.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Create Vacancy" Value="Create Vacancy" NavigateUrl="~/vacancydetails.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Create Placement Consultant" Value="Create Placement Consultant" NavigateUrl="~/AddConsultant.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#9900CC" />
+                            <StaticMenuItemStyle HorizontalPadding="18px" VerticalPadding="5px" />
+                            <StaticMenuStyle HorizontalPadding="30px" VerticalPadding="10px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" BackColor="#1A1A1A" style="text-align: center; color: #FFFFFF" Text="Copyrights @ KBS Consultancy Services Limited" Width="100%" Height="30px"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

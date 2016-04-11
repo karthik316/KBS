@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="customstyles.css" />
+    <style rel="styelsheet" type="text/css">
+       body{margin:auto;background-image:url(media/mainBackgroung.png)}aside{margin:4% 38% 0 22%;padding:2%;background-color:#fff}article img{margin:5% 2% 2%;float:left}article h2{float:left;margin:25% 2% 2%;position:fixed;font-size:17px;padding:1.5%;background-color:#ffbf00}footer p{margin:2% 2% 0;padding:1.5%;background-color:#1A1A1A;color:#fff;text-align:center}#voidSpace{padding-left:25%}#txtArea,#txtEmail,#txtName,#txtPhone{background-color:#d8bfd8}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="CreateVacancyReq.aspx">Create Vacancy Request</a></li>
+            <li><a href="vacancydetails.aspx">Create Vacancy</a></li>
+            <li><a href="AddConsultant.aspx">Create Placement Consultant</a></li>
+        </ul>
+    </nav>
+    <article>
+        <img src="media/jobavailable.jpg" width="200"/>
+        <h2> E-mail: Contact@KBS.com </h2>
+    </article>
+    <aside>
+        <pre><label><b> Name      : </b></label><input type="text" id="txtName" /></pre><br />
+        <pre><label><b> Email ID  : </b></label><input type="text" id="txtEmail" /></pre><br />
+        <pre><label><b> Phone No  : </b></label><input type="text" id="txtPhone" /></pre><br />
+        <pre><label><b> Info      : </b></label><br/><textarea id="txtArea" rows="8" cols="50"></textarea></pre>
+        <label id="voidSpace"></label><input type="submit" id="submit" value="Submit" onclick="ValidateContactUs()" /><br />
+    </aside>
+    <footer>
+        <p>Copyrights @ KBS Consultancy Services Limited</p>
+    </footer>
+    <script src="custom.js"></script>
+</body>
+</html>
